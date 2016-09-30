@@ -4,9 +4,15 @@
   "description": "Epistemy backend service #1.",
   "author": "AJ Ostrow",
   "dependencies": {
-    "express": "4.14.0"
+    "express": "4.14.0",
+    "lodash": "4.16.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "NODE_PATH=src node index.js",
+    "test": "bin/test"
+  },
+  "devDependencies": {
+    "mocha": "3.1.0",
+    "supertest": "2.0.0"
   }
 }

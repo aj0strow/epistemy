@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+export NODE_ENV=test
+export NODE_PATH=src
+
+find test -name '*-test.js' | xargs mocha --require test/helper.js

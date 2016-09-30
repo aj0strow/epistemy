@@ -1,0 +1,15 @@
+machine:
+  node:
+    version: v5.6.0
+
+dependencies:
+  cache_directories:
+    - svc1/node_modules
+  override:
+    - 'npm prune && npm install':
+        pwd: svc1
+
+test:
+  override:
+    - 'npm test':
+        pwd: svc1

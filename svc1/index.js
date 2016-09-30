@@ -1,14 +1,6 @@
-const express = require("express")
+const app = require("api")
+const env = require("env")
 
-const app = express()
-
-app.get("/", function (req, res, next) {
-  res.status(200).json({
-    app: "epistemy",
-    service: "1",
-    author: "AJ Ostrow",
-    stats: {}
-  })
+app.listen(env.port, () => {
+  console.log("listening at http://localhost:%s", env.port)
 })
-
-app.listen(process.env.PORT || 8000)
