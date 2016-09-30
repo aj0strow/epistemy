@@ -5,11 +5,16 @@ machine:
 dependencies:
   cache_directories:
     - svc1/node_modules
+    - website/node_modules
   override:
     - 'npm prune && npm install':
         pwd: svc1
+    - 'npm prune && npm install':
+        pwd: website
 
 test:
   override:
     - 'npm test':
         pwd: svc1
+    - 'npm test':
+        pwd: website

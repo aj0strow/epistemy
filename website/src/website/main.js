@@ -1,7 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-const app = <p>Epistemy</p>
+import Home from "./home"
+
+const app = <Home />
 
 document.addEventListener('DOMContentLoaded', () => {
   const view = document.createElement("div")

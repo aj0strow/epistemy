@@ -11,8 +11,11 @@
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "clean-webpack-plugin": "0.1.10",
     "core-js": "2.4.1",
+    "enzyme": "2.4.1",
     "html-webpack-plugin": "2.22.0",
+    "jest": "15.1.1",
     "react": "15.3.2",
+    "react-addons-test-utils": "15.3.2",
     "react-dom": "15.3.2",
     "react-hot-loader": "3.0.0-beta.5",
     "webpack": "1.13.2",
@@ -21,7 +24,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "test": "jest"
   },
   "babel": {
     "presets": [
@@ -31,5 +35,15 @@
     "plugins": [
       "react-hot-loader/babel"
     ]
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testPathDirs": [
+      "test"
+    ],
+    "testRegex": "-test\\.js$"
   }
 }
