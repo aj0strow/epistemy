@@ -1,15 +1,9 @@
 # `epistemy`
 
-Open source web service to keep track of published articles. 
+Web service to keep track of published articles. The primary user experience flow is to upload a PDF article with metadata. Then the user can add tags and take markdown notes. This is an app I personally want to use and can't find anywhere.
 
-1. Create an account.
+### About the Name
 
-2. Upload an article with metadata.
+The name `epistemy` comes from the word `epistemology`.
 
-3. Read the article (offline).
-
-4. Add tags to keep track.
-
-5. Take markdown notes.
-
-6. Sort articles by tag, and read prior notes. 
+> Epistemology (Listeni/ᵻˌpɪstᵻˈmɒlədʒi/; from Greek ἐπιστήμη, epistēmē, meaning "knowledge", and λόγος, logos, meaning "logical discourse") is the branch of philosophy concerned with the theory of knowledge. [(wikipedia)](https://en.wikipedia.org/wiki/Epistemology)
