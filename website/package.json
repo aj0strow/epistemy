@@ -1,0 +1,35 @@
+{
+  "name": "website",
+  "private": true,
+  "description": "Epistemy web front end.",
+  "author": "AJ Ostrow",
+  "dependencies": {
+    "babel-core": "6.16.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "case-sensitive-paths-webpack-plugin": "1.1.4",
+    "clean-webpack-plugin": "0.1.10",
+    "core-js": "2.4.1",
+    "html-webpack-plugin": "2.22.0",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-hot-loader": "3.0.0-beta.5",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "whatwg-fetch": "1.0.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack -p"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  }
+}
