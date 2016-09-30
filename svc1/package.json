@@ -1,0 +1,12 @@
+{
+  "name": "svc1",
+  "private": true,
+  "description": "Epistemy backend service #1.",
+  "author": "AJ Ostrow",
+  "dependencies": {
+    "express": "4.14.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
